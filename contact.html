@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact & Location — Khumo's kitchen</title>
+  <meta name="description" content="Find our address, hours, phone, and contact form. Located in CBD opposite Police Station.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Khumo's kitchen<span>.</span></a>
+    <nav aria-label="Primary">
+      <ul class="nav-links"><li><a href="index.html" data-nav>Home</a></li><li><a href="about.html" data-nav>About</a></li><li><a href="menu.html" data-nav>Menu</a></li><li><a href="reservation.html" data-nav>Reservation</a></li><li><a href="gallery.html" data-nav>Gallery</a></li><li><a href="offers.html" data-nav>Offers</a></li><li><a href="contact.html" data-nav>Contact</a></li></ul>
+    </nav>
+    <a href="reservation.html" class="nav-cta">Reserve</a>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+  <nav class="mobile-nav" aria-label="Mobile">
+    <ul><li><a href="index.html" data-nav>Home</a></li><li><a href="about.html" data-nav>About</a></li><li><a href="menu.html" data-nav>Menu</a></li><li><a href="reservation.html" data-nav>Reservation</a></li><li><a href="gallery.html" data-nav>Gallery</a></li><li><a href="offers.html" data-nav>Offers</a></li><li><a href="contact.html" data-nav>Contact</a></li></ul>
+  </nav>
+</header>
+<main>
+
+<section class="page-header container">
+  <p class="eyebrow">Visit us</p>
+  <h1>Pull up a chair</h1>
+</section>
+
+<section class="container section" style="padding-top:1rem;">
+  <div class="contact-grid">
+    <div>
+      <div class="info-block">
+        <h3>Address</h3>
+        <p style="font-family:'Playfair Display',serif; font-size:1.4rem;">CBD opposite Police Station</p>
+        <p style="color:var(--muted);">Gaborone</p>
+      </div>
+      <div class="info-block">
+        <h3>Hours</h3>
+        <p>Tuesday – Thursday · 5pm – 10pm</p>
+        <p>Friday – Saturday · 5pm – 11pm</p>
+        <p>Sunday · 4pm – 9pm</p>
+        <p style="color:var(--muted);">Monday · Closed</p>
+      </div>
+      <div class="info-block">
+        <h3>Contact</h3>
+        <p>kelebengpency@gmail.com</p>
+        <p style="color:var(--muted);">(267) 774 15 774</p>
+      </div>
+    </div>
+
+    <form id="contact-form" class="form-card" novalidate>
+      <h2 style="font-size:1.6rem;">Send us a note</h2>
+      <p style="color:var(--muted); font-size:.9rem; margin-top:.4rem;">Looking to book a table? <a href="reservation.html" style="color:var(--primary); text-decoration:underline;">Use our reservation form →</a></p>
+      <div class="form-grid" style="margin-top:1.25rem;">
+        <div class="field">
+          <label for="c-name">Name</label>
+          <input id="c-name" name="name" type="text" required maxlength="80">
+          <div class="error" data-error="name"></div>
+        </div>
+        <div class="field">
+          <label for="c-email">Email</label>
+          <input id="c-email" name="email" type="email" required maxlength="120">
+          <div class="error" data-error="email"></div>
+        </div>
+        <div class="field">
+          <label for="c-subject">Subject</label>
+          <select id="c-subject" name="subject">
+            <option>General inquiry</option>
+            <option>Private events</option>
+            <option>Press</option>
+            <option>Careers</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="c-message">Message</label>
+          <textarea id="c-message" name="message" rows="5" required maxlength="1000"></textarea>
+          <div class="error" data-error="message"></div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block" style="margin-top:1.25rem;">Send message</button>
+      <div id="contact-success" class="success-msg">✓ Thanks — we'll get back to you shortly.</div>
+    </form>
+  </div>
+
+
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="logo" style="color:#fff">Khumo's kitchen</p>
+        <p style="margin-top:.5rem;">Rustic Italian cooking, served warm since 2019.</p>
+        <h4>Visit</h4>
+        <p>CBD oppoiste Police Station<br>Gaborone</p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>Tue–Sun · 5pm – 11pm<br>Closed Mondays</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="reservation.html">Reservations</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="offers.html">Offers & Events</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">© <span id="year"></span> Khumo's kitchen All rights reserved.</p>
+  </div>
+</footer>
+<script src="main.js"></script>
+<script src="contact.js"></script>
+</body>
+</html>

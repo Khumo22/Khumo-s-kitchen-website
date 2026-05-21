@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery — Khumo's Kitchen</title>
+  <meta name="description" content="Photos of our food, the wood-fired oven, the dining room, and the people behind Khumo's Kitchen.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Khumo's Kitchen<span>.</span></a>
+    <nav aria-label="Primary">
+      <ul class="nav-links"><li><a href="index.html" data-nav>Home</a></li><li><a href="about.html" data-nav>About</a></li><li><a href="menu.html" data-nav>Menu</a></li><li><a href="reservation.html" data-nav>Reservation</a></li><li><a href="gallery.html" data-nav>Gallery</a></li><li><a href="offers.html" data-nav>Offers</a></li><li><a href="contact.html" data-nav>Contact</a></li></ul>
+    </nav>
+    <a href="reservation.html" class="nav-cta">Reserve</a>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+  <nav class="mobile-nav" aria-label="Mobile">
+    <ul><li><a href="index.html" data-nav>Home</a></li><li><a href="about.html" data-nav>About</a></li><li><a href="menu.html" data-nav>Menu</a></li><li><a href="reservation.html" data-nav>Reservation</a></li><li><a href="gallery.html" data-nav>Gallery</a></li><li><a href="offers.html" data-nav>Offers</a></li><li><a href="contact.html" data-nav>Contact</a></li></ul>
+  </nav>
+</header>
+<main>
+
+<section class="page-header container">
+  <p class="eyebrow">Photo gallery</p>
+  <h1>Food, faces & ambiance</h1>
+  <p class="lead">A look inside Khumo's Kitchen — from the wood-fired oven to the candlelit dining room.</p>
+</section>
+
+<section class="container section" style="padding-top:0;">
+  <div class="gallery-grid">
+    <div class="gallery-item"><img src="gallery-dining.jpg" alt="Candlelit dining room"></div>
+    <div class="gallery-item"><img src="gallery-pizza.jpg" alt="Wood-fired pizza"></div>
+    <div class="gallery-item"><img src="gallery-chef.jpg" alt="Chef plating a dish"></div>
+    <div class="gallery-item"><img src="gallery-antipasti.jpg" alt="Antipasti board"></div>
+    <div class="gallery-item"><img src="gallery-bar.jpg" alt="Bar area with cocktails"></div>
+    <div class="gallery-item"><img src="gallery-dessert.jpg" alt="Tiramisu dessert"></div>
+    <div class="gallery-item"><img src="dish-pasta.jpg" alt="Hand-rolled pasta"></div>
+    <div class="gallery-item"><img src="interior.jpg" alt="Restaurant interior"></div>
+    <div class="gallery-item"><img src="hero-table.jpg" alt="Set dinner table"></div>
+  </div>
+</section>
+
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+  <button class="lightbox-close" aria-label="Close">×</button>
+  <img src="" alt="">
+</div>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="logo" style="color:#fff">Khumo's kitchen.</p>
+        <p style="margin-top:.5rem;">Rustic Italian cooking, served warm since 2019.</p>
+        <div class="socials" aria-label="Social media">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d=""/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d=""/></svg></a>
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24"><path d=""/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <p>CBD opposite Police Station<br>Gaborone</p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>Tue–Sun · 5pm – 11pm<br>Closed Mondays</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="reservation.html">Reservations</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="offers.html">Offers & Events</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">© <span id="year"></span> Khumo's Kitchen. All rights reserved.</p>
+  </div>
+</footer>
+<script src="main.js"></script>
+<script src="gallery.js"></script>
+</body>
+</html>

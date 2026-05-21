@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Khumo's kitchen</title>
+  <meta name="description" content="A neighborhood Italian kitchen run by friends. The story behind Khumo's kitchen, our team, and how we cook.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Khumo's kitchen<span>.</span></a>
+    <nav aria-label="Primary">
+      <ul class="nav-links"><li><a href="index.html" data-nav>Home</a></li><li><a href="about.html" data-nav>About</a></li><li><a href="menu.html" data-nav>Menu</a></li><li><a href="reservation.html" data-nav>Reservation</a></li><li><a href="gallery.html" data-nav>Gallery</a></li><li><a href="offers.html" data-nav>Offers</a></li><li><a href="contact.html" data-nav>Contact</a></li></ul>
+    </nav>
+    <a href="reservation.html" class="nav-cta">Reserve</a>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+  <nav class="mobile-nav" aria-label="Mobile">
+    <ul><li><a href="index.html" data-nav>Home</a></li><li><a href="about.html" data-nav>About</a></li><li><a href="menu.html" data-nav>Menu</a></li><li><a href="reservation.html" data-nav>Reservation</a></li><li><a href="gallery.html" data-nav>Gallery</a></li><li><a href="offers.html" data-nav>Offers</a></li><li><a href="contact.html" data-nav>Contact</a></li></ul>
+  </nav>
+</header>
+<main>
+
+<section class="page-header container">
+  <p class="eyebrow">Our story</p>
+  <h1>A kitchen built by <em style="color:var(--primary)">friends</em>.</h1>
+  <p class="lead">Khumo's kitchen started in 2019 as a Sunday supper club in a CBD, Seven years later we're still cooking the same way — for people we like, with ingredients we trust.</p>
+</section>
+
+<section class="container">
+  <img src="interior.jpg" alt="Khumo's kitchen dining room" style="border-radius:1.5rem; aspect-ratio:16/9; object-fit:cover; width:100%;">
+</section>
+
+<section class="section">
+  <div class="container card-grid">
+    <div style="border-left:3px solid var(--primary); padding-left:1.25rem;">
+      <p style="font-family:'Playfair Display',serif; font-size:3rem; color:var(--primary);">10</p>
+      <p style="text-transform:uppercase; letter-spacing:.15em; color:var(--muted); font-size:.8rem; font-family:Arial,sans-serif;">Years cooking</p>
+    </div>
+    <div style="border-left:3px solid var(--primary); padding-left:1.25rem;">
+      <p style="font-family:'Playfair Display',serif; font-size:3rem; color:var(--primary);">32</p>
+      <p style="text-transform:uppercase; letter-spacing:.15em; color:var(--muted); font-size:.8rem; font-family:Arial,sans-serif;">Wines by the glass</p>
+    </div>
+    <div style="border-left:3px solid var(--primary); padding-left:1.25rem;">
+      <p style="font-family:'Playfair Display',serif; font-size:3rem; color:var(--primary);">1</p>
+      <p style="text-transform:uppercase; letter-spacing:.15em; color:var(--muted); font-size:.8rem; font-family:Arial,sans-serif;">Sourdough starter, named Marco</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:rgba(232, 223, 211, 0.3);">
+  <div class="container" style="max-width:760px;">
+    <p class="eyebrow">Our team</p>
+    <h2 style="margin-top:.5rem;">The people behind dinner</h2>
+    <p style="margin-top:1.25rem; color:var(--muted); font-size:1.1rem;">Chef Thato Ramongwe grew up in Serowe and learned to cook standing on a stool in her grandmother's kitchen. Her partner, Sam, runs the floor and the wine list — a careful collection of small. mostly.</p>
+    <p style="margin-top:1rem; color:var(--muted); font-size:1.1rem;">We change the menu when the seasons do. We stay open late on Fridays. We don't take ourselves too seriously, but we do take dinner seriously.</p>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="logo" style="color:#fff">Khumo's kitchen</p>
+        <p style="margin-top:.5rem;">Rustic Italian cooking, served warm since 2019</p>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <p>CBD opposite Police Station<br>Gaborone</p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>Tue–Sun · 5pm – 11pm<br>Closed Mondays</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="reservation.html">Reservations</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="offers.html">Offers & Events</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">© <span id="year"></span> Khumo's kitchen All rights reserved.</p>
+  </div>
+</footer>
+<script src="main.js"></script>
+
+</body>
+</html>
